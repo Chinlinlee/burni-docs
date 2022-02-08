@@ -1,0 +1,22 @@
+site_name: Burni docs
+theme:
+  name: material
+  features:
+    - content.tabs.link
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+
+nav:
+ - Home: index.md
+ - Getting Started:
+    - Installation: Getting started/Installation.md
+    - Configuration: Getting started/Configuration.md
+    - Deploy: Getting started/Deploy.md
