@@ -20,3 +20,7 @@ nav:
     - Installation: Getting started/Installation.md
     - Configuration: Getting started/Configuration.md
     - Deploy: Getting started/Deploy.md
+ - Search Parameters: 
+    - Overview: SearchParameter/Overview.md
+    - Add search parameter: SearchParameter/Add_SearchParameter.md
+    
