@@ -16,6 +16,9 @@ http://localhost:8080/fhir/Bundle?composition.patient=Patient/123
 If you wanna support this parameter, you can add code in `api/FHIR/Bundle/BundleParametersHandler.js`.
 ```js
 //#region composition.patient
+// search parameter name: "composition.patient"
+// field in resource: "entry.resource.subject.reference"
+// type: reference
 paramsSearchFields["composition.patient"]= ["entry.resource.subject.reference"];
 paramsSearch["composition.patient"] = (query) => {
     try {
