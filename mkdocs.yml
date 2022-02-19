@@ -21,6 +21,9 @@ nav:
     - Installation: Getting started/Installation.md
     - Configuration: Getting started/Configuration.md
     - Deploy: Getting started/Deploy.md
+ - FHIR API Documentation:
+    - Overview: FHIR API Documentation/Overview.md
+    - Generate OpenAPI: FHIR API Documentation/Generate OpenAPI.md
  - Search Parameters: 
     - Overview: SearchParameter/Overview.md
     - Add search parameter: SearchParameter/Add_SearchParameter.md
