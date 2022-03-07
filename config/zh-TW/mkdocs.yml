@@ -1,0 +1,43 @@
+#good tutorial https://github.com/squidfunk/mkdocs-material/discussions/2346
+site_name: Burni docs
+docs_dir: '../../docs/zh-TW'
+site_dir: '../../generated/zh-TW'
+theme:
+  name: material
+  features:
+    - content.tabs.link
+  language: zh-TW
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: 繁體中文
+      link: /zh-TW
+      lang: zh-TW
+
+nav:
+ - Home: index.md
+ - 介紹: Introduction.md
+ - 讓我們開始吧！:
+    - 安裝: Getting started/Installation.md
+    - 設定: Getting started/Configuration.md
+    - 部屬: Getting started/Deploy.md
+ - FHIR API 文件:
+    - 概觀: FHIR API Documentation/Overview.md
+    - 產生OpenAPI: FHIR API Documentation/Generate OpenAPI.md
+ - 搜尋參數: 
+    - 概觀: SearchParameter/Overview.md
+    - 自行新增搜尋參數: SearchParameter/Add_SearchParameter.md
+    

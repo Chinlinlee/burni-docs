@@ -1,14 +1,15 @@
-# Generate OpenAPI
-The Burni use [apidoc](https://apidocjs.com/) to generate OpenAPI with resources that you config in `config/config.js` file and host the OpenAPI with [ReDoc](https://github.com/Redocly/redoc).
+# 產生 OpenAPI
+Burni 使用 [apidoc](https://apidocjs.com/) 以及在`config/config.js`檔案設定的Resources 產生 OpenAPI 文件。並使用[ReDoc](https://github.com/Redocly/redoc)作為API文件的網站.
 
-The full demo of API documentation can be found [here](https://chinlinlee.github.io/Burni/apidoc/redoc/)
+!!! info
+    API文件完整範例網站 [here](https://chinlinlee.github.io/Burni/apidoc/redoc/)
 
-## Generation
-- Run script below to generate files to destination at `docs/apidoc/apidoc-sources` that contain [apidoc](https://apidocjs.com/)
+## 如何產生
+- 使用下面的指令於`docs/apidoc/apidoc-sources`產生含有[apidoc]註解的檔案
 ```sh
 node api_generator/doc-generator.js
 ```
-Example:
+範例：
 ```js
 /**
      * 
@@ -124,11 +125,11 @@ Example:
     *
     */
 ```
-- Run script below to generate open API files to destination at `docs/apidoc/redoc`
+- 使用以下指令在`docs/apidoc/redoc`產生 openAPI 文件
 ```sh
 node docs/getAPIDocOpenapi.js
 ```
-Example:
+範例：
 ```json
 {
     "openapi": "3.0.0",

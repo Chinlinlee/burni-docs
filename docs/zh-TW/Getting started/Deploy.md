@@ -1,9 +1,9 @@
-# Deploy
-## With node
+# 部屬
+## 使用 Node.JS
 ```sh
 node server.js
 ```
-You will see console printing the information below:
+您會看到 console 打印以下訊息：
 ```
 mongodb://localhost:27017/dbName
 moduleName ::  Patient
@@ -17,8 +17,8 @@ path :  path\burni\models\mongodb/staticModel
 http server is listening on port:8089
 we're connected!
 ```
-## With docker-compose
-The example of `docker-compose.yaml` file in root path
+## 使用 docker-compose
+以下是來自根目錄 `docker-compose.yaml` 的範例
 ```yaml
 version: '3.4'
 services:
@@ -61,7 +61,7 @@ services:
     restart: on-failure:3
     stdin_open : true
 ```
-deploy
+### docker-compose部屬
 ```sh
 docker-compose up -d
 ```

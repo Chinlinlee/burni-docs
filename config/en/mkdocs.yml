@@ -1,8 +1,12 @@
+#good tutorial https://github.com/squidfunk/mkdocs-material/discussions/2346
 site_name: Burni docs
+docs_dir: '../../docs/en'
+site_dir: '../../generated/en'
 theme:
   name: material
   features:
     - content.tabs.link
+  language: en
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -13,6 +17,15 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - admonition
+
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: 繁體中文
+      link: /zh-TW
+      lang: zh-TW
 
 nav:
  - Home: index.md
