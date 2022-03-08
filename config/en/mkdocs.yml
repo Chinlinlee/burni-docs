@@ -1,7 +1,7 @@
 #good tutorial https://github.com/squidfunk/mkdocs-material/discussions/2346
 site_name: Burni docs
 docs_dir: '../../docs/en'
-site_dir: '../../generated/en'
+site_dir: '../../generated'
 theme:
   name: material
   features:
@@ -40,4 +40,5 @@ nav:
  - Search Parameters: 
     - Overview: SearchParameter/Overview.md
     - Add search parameter: SearchParameter/Add_SearchParameter.md
-    
+ - Code API Documentation:
+    - searchParameterQueryHandler: Code API Documentation/models/FHIR/searchParameterQueryHandler.md

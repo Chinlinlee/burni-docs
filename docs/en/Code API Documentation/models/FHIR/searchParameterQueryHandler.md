@@ -1,3 +1,5 @@
+# searchParameterQueryHandler
+This file is in `models/FHIR/`.
 ## Functions
 
 <dl>
@@ -162,7 +164,10 @@ getAddressQuery(
 ```
 **Example**  
 ```js
-getNameQuery({    "name": "Chalmers"}, ["name"], "name");
+getNameQuery(
+{
+    "name": "Chalmers"
+}, ["name"], "name");
 ```
 <a name="getTokenQuery"></a>
 

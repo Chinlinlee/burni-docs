@@ -40,4 +40,6 @@ nav:
  - 搜尋參數: 
     - 概觀: SearchParameter/Overview.md
     - 自行新增搜尋參數: SearchParameter/Add_SearchParameter.md
+ - 程式碼文件:
+    - searchParameterQueryHandler: Code API Documentation/models/FHIR/searchParameterQueryHandler.md
     

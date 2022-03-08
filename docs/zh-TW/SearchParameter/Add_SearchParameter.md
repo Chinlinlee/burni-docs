@@ -1,20 +1,19 @@
 # 自行新增搜尋參數
-與搜尋參數相關的程式碼可以在`models\FHIR\queryBuild.js`
-The code about search parameters can be found in `models\FHIR\queryBuild.js` and `models\FHIR\searchParameterQueryHandler.js` files. 
+與搜尋參數相關的程式碼位於`models\FHIR\queryBuild.js` 以及 `models\FHIR\searchParameterQueryHandler.js` 檔案。 
 
-- `queryBuild.js`: get single MongoDB query object from data type.
-- `searchParameterQueryHandler.js`: using `queryBuild.js` and get fully MongoDB query object from HTTP query param.
+- `queryBuild.js`: 根據不同的 Data Type 組成單個MongoDB 查詢語法。
+- `searchParameterQueryHandler.js`: 根據 HTTP 網址中的查詢條件使用 `queryBuild.js` 取得完整的 MongoDB 查詢語法。
 
-Some search parameters from generator will got missing or incorrect. You can fix by using methods in `models\FHIR\searchParameterQueryHandler.js`.
+由產生器產生之部分搜尋參數可能是錯誤的或遺失。您可以使用 `models\FHIR\searchParameterQueryHandler.js` 內的方法修正。
 
 ## 範例： Bundle.composition
-In some use cases, you may want to search `patient/{id}` in `entry.resource.subject.reference` of bundle resource.
+在一些使用案例，您也許會想使用 bundle 的 `entry.resource.subject.reference` 搜尋 `patient/{id}`。
 
 - The example URL:
 ```sh
 http://localhost:8080/fhir/Bundle?composition.patient=Patient/123
 ```
-If you wanna support this parameter, you can add code in `api/FHIR/Bundle/BundleParametersHandler.js`.
+如果您想支援此項搜尋參數，您可以在 `api/FHIR/Bundle/BundleParametersHandler.js` 檔案新增以下程式碼
 ```js
 //#region composition.patient
 // search parameter name: "composition.patient"
