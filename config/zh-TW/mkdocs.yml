@@ -7,6 +7,7 @@ theme:
   features:
     - content.tabs.link
   language: zh-TW
+  logo: ../assets/BURNI.png
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -21,10 +22,10 @@ markdown_extensions:
 extra:
   alternate:
     - name: English
-      link: /
+      link: /Burni
       lang: en
     - name: 繁體中文
-      link: /zh-TW
+      link: /Burni/zh-TW
       lang: zh-TW
 
 nav:
@@ -42,4 +43,5 @@ nav:
     - 自行新增搜尋參數: SearchParameter/Add_SearchParameter.md
  - 程式碼文件:
     - searchParameterQueryHandler: Code API Documentation/models/FHIR/searchParameterQueryHandler.md
+ - FHIR Validator: FHIR Validator/index.md
     
