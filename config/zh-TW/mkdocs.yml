@@ -44,4 +44,5 @@ nav:
  - 程式碼文件:
     - searchParameterQueryHandler: Code API Documentation/models/FHIR/searchParameterQueryHandler.md
  - FHIR Validator: FHIR Validator/index.md
+ - How Burni Work: How Burni Work/index.md
     
